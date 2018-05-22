@@ -1,0 +1,22 @@
+{
+  "name": "react-native-ws-unionpay",
+  "version": "1.0.0",
+  "description": "银联支付，RN插件",
+  "main": "index.js",
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ws752958369/react-native-unionpay.git"
+  },
+  "keywords": [
+    "unionpay"
+  ],
+  "author": "wangsheng",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ws752958369/react-native-unionpay/issues"
+  },
+  "homepage": "https://github.com/ws752958369/react-native-unionpay#readme"
+}

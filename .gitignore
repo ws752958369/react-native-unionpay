@@ -1,0 +1,76 @@
+
+Skip to content
+This repository
+
+    Pull requests
+    Issues
+    Marketplace
+    Explore
+
+    @ws752958369
+
+4
+11
+
+    5
+
+OtkurBiz/react-native-unionpay
+Code
+Issues 2
+Pull requests 0
+Projects 0
+Wiki
+Insights
+react-native-unionpay/.gitignore
+639de18 on 14 Dec 2016
+Alim fix bug and update event emitter
+32 lines (30 sloc) 329 Bytes
+# OSX
+#
+.DS_Store
+
+# Xcode
+#
+build/
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata
+*.xccheckout
+*.moved-aside
+DerivedData
+*.hmap
+*.ipa
+*.xcuserstate
+project.xcworkspace
+
+# Android/IJ
+#
+*.iml
+.idea
+.gradle
+local.properties
+node_modules/
+yarn.lock
+
+    © 2018 GitHub, Inc.
+    Terms
+    Privacy
+    Security
+    Status
+    Help
+
+    Contact GitHub
+    API
+    Training
+    Shop
+    Blog
+    About
+
+Press h to open a hovercard with more details.
+

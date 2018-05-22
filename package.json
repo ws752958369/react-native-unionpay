@@ -1,6 +1,6 @@
 {
-  "name": "react-native-gitipay-unionpay",
-  "version": "1.1.0",
+  "name": "react-native-giti-unionpay",
+  "version": "1.0.1",
   "description": "银联支付，RN插件",
   "main": "index.js",
   "scripts": {
@@ -13,7 +13,7 @@
   "keywords": [
     "unionpay"
   ],
-  "author": "wangsheng100833",
+  "author": "wangsheng",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/ws752958369/react-native-unionpay/issues"

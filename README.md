@@ -20,19 +20,19 @@ react-native link react-native-giti-unionpay
     });
 这里的tn是后台服务器根据银联相关规则生成的订单信息；第二个参数为bool类型，表示是否为生产环境，如果不是则为false,否则为true.
 
-## IOS配置步骤
+# IOS配置步骤
 1.导入依赖库文件.Targets -> Genneral -> Linked Frameworks And Libraries
     CFNetwork.framework 
     SystemConfiguration.framework 
     libz
  2.Add Url Schemes,在info.plist下 新增 URL Schemes 
   <key>CFBundleURLTypes</key> 
-  <array> <br />
-  <dict> <br />
+  <array> 
+  <dict> 
   <key>CFBundleURLName</key> 
   <string>unionpay</string> 
   <key>CFBundleURLSchemes</key> 
-  <array> <br />
+  <array> 
   <string>unionpay</string> 
   </array> 
   </dict> 

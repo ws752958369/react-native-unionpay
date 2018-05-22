@@ -64,7 +64,7 @@ react-native link react-native-giti-unionpay
 }
 ```
 
-# android  配置步
+# android  配置
 ```
 
 1.在android/settings.gradle文件下添加以下代码：

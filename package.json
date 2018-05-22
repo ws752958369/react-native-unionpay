@@ -1,6 +1,6 @@
 {
-  "name": "react-native-giti-unionpay",
-  "version": "1.0.2",
+  "name": "react-native-gitipay-unionpay",
+  "version": "1.0.0",
   "description": "银联支付，RN插件",
   "main": "index.js",
   "scripts": {

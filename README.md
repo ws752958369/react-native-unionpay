@@ -49,9 +49,7 @@ react-native link react-native-giti-unionpay
   }
   return NO;
 }
-</p>
 
-<p>
 //MARK:9.0以后使用的方法
 - (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey, id> *)options
 {
@@ -61,5 +59,4 @@ react-native link react-native-giti-unionpay
   }
   return NO;
 }
-</p>
 

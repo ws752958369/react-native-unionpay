@@ -26,20 +26,22 @@ react-native link react-native-giti-unionpay
   SystemConfiguration.framework <br />
   libz
 ### 2.Add Url Schemes
-在info.plist下 新增 URL Schemes
-  <key>CFBundleURLTypes</key>
-  <array>
-  <dict>
-  <key>CFBundleURLName</key>
-  <string>unionpay</string>
-  <key>CFBundleURLSchemes</key>
-  <array>
-  <string>unionpay</string>
+<p>
+    在info.plist下 新增 URL Schemes 
+  <key>CFBundleURLTypes</key> 
+  <array> <br />
+  <dict> <br />
+  <key>CFBundleURLName</key> 
+  <string>unionpay</string> 
+  <key>CFBundleURLSchemes</key> 
+  <array> <br />
+  <string>unionpay</string> 
+  </array> 
+  </dict> 
   </array>
-  </dict>
-  </array>
+</p>
   ### 3.修改APPDelegate.m，导入头文件#import "UPPayControl.h"，新增方法：
-
+<p>
 //MARK:9.0以前使用的方法
 - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(nullable NSString *)sourceApplication annotation:(id)annotation
 {
@@ -49,7 +51,9 @@ react-native link react-native-giti-unionpay
   }
   return NO;
 }
+</p>
 
+<p>
 //MARK:9.0以后使用的方法
 - (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey, id> *)options
 {
@@ -59,4 +63,5 @@ react-native link react-native-giti-unionpay
   }
   return NO;
 }
+</p>
 

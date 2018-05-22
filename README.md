@@ -21,24 +21,24 @@ react-native link react-native-giti-unionpay
 这里的tn是后台服务器根据银联相关规则生成的订单信息；第二个参数为bool类型，表示是否为生产环境，如果不是则为false,否则为true.
 
 ## IOS配置步骤
- 1.导入依赖库文件.Targets -> Genneral -> Linked Frameworks And Libraries
-  CFNetwork.framework \n
-  SystemConfiguration.framework \n
-  libz
- 2.Add Url Schemes
-在info.plist下 新增 URL Schemes
-  <key>CFBundleURLTypes</key>
-  <array>
-  <dict>
-  <key>CFBundleURLName</key>
-  <string>unionpay</string>
-  <key>CFBundleURLSchemes</key>
-  <array>
-  <string>unionpay</string>
+1.导入依赖库文件.Targets -> Genneral -> Linked Frameworks And Libraries
+    CFNetwork.framework 
+    SystemConfiguration.framework 
+    libz
+ 2.Add Url Schemes,在info.plist下 新增 URL Schemes 
+  <key>CFBundleURLTypes</key> 
+  <array> <br />
+  <dict> <br />
+  <key>CFBundleURLName</key> 
+  <string>unionpay</string> 
+  <key>CFBundleURLSchemes</key> 
+  <array> <br />
+  <string>unionpay</string> 
+  </array> 
+  </dict> 
   </array>
-  </dict>
-  </array>
- 3.修改APPDelegate.m，导入头文件#import "UPPayControl.h"，新增方法：
+
+3.修改APPDelegate.m，导入头文件#import "UPPayControl.h"，新增方法：
 
 //MARK:9.0以前使用的方法
 - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(nullable NSString *)sourceApplication annotation:(id)annotation
@@ -49,7 +49,9 @@ react-native link react-native-giti-unionpay
   }
   return NO;
 }
+</p>
 
+<p>
 //MARK:9.0以后使用的方法
 - (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey, id> *)options
 {
@@ -59,4 +61,5 @@ react-native link react-native-giti-unionpay
   }
   return NO;
 }
+</p>
 

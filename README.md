@@ -62,3 +62,35 @@ react-native link react-native-giti-unionpay
   }
   return NO;
 }
+```
+
+# android  配置步奏 
+```
+
+1.在android/settings.gradle文件下添加以下代码：
+include  ':react-native-unionpay'
+
+2.在android/app/build.gradle的dependencies部分添加以下代码：
+compile project(':react-native-unionpay')
+
+3.在AndroidManifest.xml添加权限
+<uses-permission android:name="android.permission.INTERNET" />
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+<uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+<uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+<uses-permission android:name="org.simalliance.openmobileapi.SMARTCARD" />
+<uses-permission android:name="android.permission.NFC" />
+
+<uses-feature android:name="android.hardware.nfc.hce"/>
+4.在AndroidManifest.xml application下添加
+<uses-library android:name="org.simalliance.openmobileapi" android:required="false"/>
+
+5.MainApplication.java文件中 实例化package
+@Override
+protected List<ReactPackage> getPackages() {
+return Arrays.<ReactPackage>asList(
+new UnionPayPackage()    //添加银联支付package
+);
+}
+```

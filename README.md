@@ -22,8 +22,8 @@ react-native link react-native-giti-unionpay
 
 ## IOS配置步骤
 ### 1.导入依赖库文件.Targets -> Genneral -> Linked Frameworks And Libraries
-  CFNetwork.framework \n
-  SystemConfiguration.framework \n
+  CFNetwork.framework <br />
+  SystemConfiguration.framework <br />
   libz
 ### 2.Add Url Schemes
 在info.plist下 新增 URL Schemes

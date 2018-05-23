@@ -58,9 +58,11 @@ public class UnionPayModule extends ReactContextBaseJavaModule implements Activi
             }
             // 结果result_data为成功时，去商户后台查询一下再展示成功
         } else if (str.equalsIgnoreCase("fail")) {
-            mPromise.reject("0", "fail");
+            mPromise.reject("10002", "fail");
         } else if (str.equalsIgnoreCase("cancel")) {
-            mPromise.reject("0", "cancel");
+            mPromise.reject("10003", "cancel");
+        } else {
+            mPromise.reject("10001", "error");
         }
     }
 

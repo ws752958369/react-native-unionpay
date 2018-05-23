@@ -53,18 +53,18 @@ RCT_REMAP_METHOD(pay, payTN:(NSString *)tn isProduction:(BOOL)isProduction resol
         [[UPPaymentControl defaultControl] handlePaymentResult:url completeBlock:^(NSString *code, NSDictionary *data) {
             if ([code isEqual:@"cancel"]) {
                 //交易取消
-                NSString *error = @"交易取消";
+                NSString *error = @"cancel";
                 UPPay_reject(@"10003",error, [NSError errorWithDomain:error code:10003 userInfo:data]);
             }else if ([code isEqual:@"success"]){
                 //交易成功
                 UPPay_resolve(@[data]);
             }else if ([code isEqual:@"fail"]){
                 //交易失败
-                NSString *error = @"交易失败";
+                NSString *error = @"fail";
                 UPPay_reject(@"10002",error, [NSError errorWithDomain:error code:10002 userInfo:data]);
             }else{
                 //交易出错
-                NSString *error = @"交易出错";
+                NSString *error = @"error";
                 UPPay_reject(@"10001",error, [NSError errorWithDomain:error code:10001 userInfo:data]);
             }
         }];

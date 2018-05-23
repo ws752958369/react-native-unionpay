@@ -25,7 +25,7 @@ RCT_REMAP_METHOD(pay, payTN:(NSString *)tn isProduction:(BOOL)isProduction resol
     for (NSDictionary *url in urls) {
         NSArray *schemes = url[@"CFBundleURLSchemes"];
         if (!multiUrls ||
-            (multiUrls && [@"alipay" isEqualToString:url[@"CFBundleURLName"]])) {
+            (multiUrls && [@"unionpay-giti" isEqualToString:url[@"CFBundleURLName"]])) {
             [appScheme appendString:schemes[0]];
             break;
         }
